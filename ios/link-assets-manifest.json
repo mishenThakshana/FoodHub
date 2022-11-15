@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/SofiaProBold.otf",
+      "sha1": "cc5717c99183d0009be73de5f938680aea962c7f"
+    },
+    {
+      "path": "src/assets/fonts/SofiaProMedium.otf",
+      "sha1": "031fbc487fedfb1d112f5ee21d74dd5c91b8c240"
+    }
+  ]
+}
