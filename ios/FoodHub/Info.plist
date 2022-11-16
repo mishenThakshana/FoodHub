@@ -53,8 +53,8 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>SofiaProBold.otf</string>
-		<string>SofiaProMedium.otf</string>
+		<string>SofiaProBold.ttf</string>
+		<string>SofiaProMedium.ttf</string>
 	</array>
 </dict>
 </plist>

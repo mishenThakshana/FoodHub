@@ -2,12 +2,12 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "src/assets/fonts/SofiaProBold.otf",
-      "sha1": "cc5717c99183d0009be73de5f938680aea962c7f"
+      "path": "src/assets/fonts/SofiaProBold.ttf",
+      "sha1": "f3f0e99e35ac84630354a98a3cf5609907302521"
     },
     {
-      "path": "src/assets/fonts/SofiaProMedium.otf",
-      "sha1": "031fbc487fedfb1d112f5ee21d74dd5c91b8c240"
+      "path": "src/assets/fonts/SofiaProMedium.ttf",
+      "sha1": "d18c3033af3dbad70f38633ac2f86dad535243b9"
     }
   ]
 }
