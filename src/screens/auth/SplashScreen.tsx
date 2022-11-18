@@ -11,7 +11,7 @@ interface SplashScreenInterface {
 const SplashScreen: FC<SplashScreenInterface> = ({navigation}) => {
   useEffect(() => {
     setTimeout(() => {
-      navigation.navigate(routes.LOGIN);
+      navigation.navigate(routes.WELCOME);
     }, 3000);
   }, []);
 

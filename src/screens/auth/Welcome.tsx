@@ -1,3 +1,4 @@
+import {FC} from 'react';
 import {
   View,
   Text,
@@ -6,12 +7,17 @@ import {
   useWindowDimensions,
 } from 'react-native';
 import {BackgroundImg, FacebookLogo, GoogleLogo} from 'src/assets/images';
-import {Btn, BtnIcon, LineText} from 'src/components';
+import {Btn, BtnIcon, LineText, AlreadyText, SocialLogin} from 'src/components';
 import colors from 'src/constants/colors';
 import styles from 'src/styles/Global.styles';
 import LinearGradient from 'react-native-linear-gradient';
+import routes from 'src/constants/routes';
 
-const Login = () => {
+interface WelcomeInterface {
+  navigation: any;
+}
+
+const Welcome: FC<WelcomeInterface> = ({navigation}) => {
   const {height, width} = useWindowDimensions();
   return (
     <SafeAreaView style={styles.rootContainer}>
@@ -50,45 +56,30 @@ const Login = () => {
         </View>
         {/* Login pallet */}
         <View>
-          <LineText width={120} text="sign in with" />
+          <LineText width={120} text="sign in with" textColor={colors.ACCENT} />
           {/* Social Login */}
-          <View style={styles.socialLoginBtnContainer}>
-            <BtnIcon
-              color={colors.ACCENT}
-              label="FACEBOOK"
-              image={<FacebookLogo width={30} height={30} />}
-              size={25}
-            />
-            <BtnIcon
-              color={colors.ACCENT}
-              label="GOOGLE"
-              image={<GoogleLogo width={30} height={30} />}
-              size={30}
-            />
-          </View>
+          <SocialLogin />
           {/* Other options */}
           <Btn
+            handler={() => navigation.navigate(routes.SIGNUP)}
             color="rgba(255,255,255, 0.2)"
             label="Start with email or phone"
             labelColor={colors.ACCENT}
             transparent={true}
             borderColor={colors.ACCENT}
           />
-          <View style={{alignItems: 'center', marginVertical: 20}}>
-            <Text
-              style={{
-                color: colors.ACCENT,
-                fontSize: 16,
-                fontFamily: 'SofiaProMedium',
-              }}>
-              Already have an account?{` `}
-              <Text style={{textDecorationLine: 'underline'}}>Sign In</Text>
-            </Text>
-          </View>
+          {/* Already Text */}
+          <AlreadyText
+            text="Already have an account?"
+            subText="Sign In"
+            underline
+            textColor={colors.ACCENT}
+            subTextColor={colors.ACCENT}
+          />
         </View>
       </View>
     </SafeAreaView>
   );
 };
 
-export default Login;
+export default Welcome;

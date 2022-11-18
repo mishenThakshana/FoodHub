@@ -54,6 +54,43 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     marginVertical: 20,
   },
+  alreadyText: {
+    color: colors.ACCENT,
+    fontSize: 16,
+    fontFamily: 'SofiaProMedium',
+  },
+  topBarImage: {
+    height: 184,
+    position: 'absolute',
+    top: -70,
+  },
+  formInputContainer: {marginVertical: 10},
+  formInputPlaceholder: {
+    color: colors.GRAY,
+    fontSize: 16,
+    fontFamily: 'SofiaProMedium',
+  },
+  formInput: {
+    width: '100%',
+    borderWidth: 1,
+    borderRadius: 10,
+    borderColor: colors.LIGHT_GRAY,
+    fontSize: 17,
+    paddingHorizontal: 10,
+    color: colors.SECONDARY,
+    marginTop: 10,
+  },
+  passwordInputContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderWidth: 1,
+    paddingHorizontal: 10,
+    marginTop: 10,
+    borderRadius: 10,
+    borderColor: colors.LIGHT_GRAY,
+  },
+  submitBtnContainer: {marginHorizontal: 40, marginVertical: 10},
+  formInputBlockContainer: {marginVertical: 15},
 });
 
 export default styles;

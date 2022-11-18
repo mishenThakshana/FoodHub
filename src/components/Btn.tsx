@@ -26,7 +26,7 @@ const Btn: FC<BtnInterface> = ({
   borderColor,
 }) => {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={handler}>
       <View
         style={[
           color ? {backgroundColor: color} : {backgroundColor: colors.PRIMARY},

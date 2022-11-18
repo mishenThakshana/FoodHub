@@ -5,9 +5,10 @@ import colors from 'src/constants/colors';
 interface LineTextInterface {
   width: number;
   text: string;
+  textColor: string;
 }
 
-const LineText: FC<LineTextInterface> = ({width, text}) => {
+const LineText: FC<LineTextInterface> = ({width, text, textColor}) => {
   return (
     <View
       style={{
@@ -18,7 +19,7 @@ const LineText: FC<LineTextInterface> = ({width, text}) => {
         style={{
           flex: 1,
           height: 1,
-          backgroundColor: colors.ACCENT,
+          backgroundColor: textColor,
           opacity: 0.5,
         }}
       />
@@ -27,7 +28,7 @@ const LineText: FC<LineTextInterface> = ({width, text}) => {
           style={{
             width,
             textAlign: 'center',
-            color: colors.ACCENT,
+            color: textColor,
             fontFamily: 'SofiaProBold',
             fontSize: 16,
           }}>
@@ -38,7 +39,7 @@ const LineText: FC<LineTextInterface> = ({width, text}) => {
         style={{
           flex: 1,
           height: 1,
-          backgroundColor: colors.ACCENT,
+          backgroundColor: textColor,
           opacity: 0.5,
         }}
       />

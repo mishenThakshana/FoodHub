@@ -1,4 +1,5 @@
 export default {
   SPLASH_SCREEN: 'SplashScreen',
-  LOGIN: 'Login',
+  WELCOME: 'Welcome',
+  SIGNUP: 'Signup',
 };
