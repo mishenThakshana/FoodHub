@@ -48,7 +48,11 @@ const Login: FC<LoginInterface> = ({navigation}) => {
             />
             {/* Submit btn */}
             <View style={styles.submitBtnContainer}>
-              <Btn label="LOGIN" labelColor={colors.ACCENT} />
+              <Btn
+                handler={() => navigation.navigate(routes.VERIFICATION)}
+                label="LOGIN"
+                labelColor={colors.ACCENT}
+              />
             </View>
             {/* Already Text */}
             <AlreadyText

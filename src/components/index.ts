@@ -6,3 +6,5 @@ export {default as ScreenTitle} from './ScreenTitle';
 export {default as FormInput} from './FormInput';
 export {default as AlreadyText} from './AlreadyText';
 export {default as SocialLogin} from './SocialLogin';
+export {default as Message} from './Message';
+export {default as VerificationCode} from './VerificationCode';

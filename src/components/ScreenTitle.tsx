@@ -5,11 +5,19 @@ import styles from 'src/styles/Global.styles';
 
 interface ScreenTitleInterface {
   title: string;
+  size?: number;
 }
 
-const ScreenTitle: FC<ScreenTitleInterface> = ({title}) => {
+const ScreenTitle: FC<ScreenTitleInterface> = ({title, size}) => {
   return (
-    <Text style={[styles.screenTitle, {color: colors.SECONDARY}]}>{title}</Text>
+    <Text
+      style={[
+        styles.screenTitle,
+        {color: colors.SECONDARY},
+        size ? {fontSize: size} : {},
+      ]}>
+      {title}
+    </Text>
   );
 };
 

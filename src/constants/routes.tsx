@@ -3,4 +3,5 @@ export default {
   WELCOME: 'Welcome',
   SIGNUP: 'Signup',
   LOGIN: 'Login',
+  VERIFICATION: 'Verification',
 };

@@ -98,6 +98,33 @@ const styles = StyleSheet.create({
   },
   submitBtnContainer: {marginHorizontal: 40, marginVertical: 10},
   formInputBlockContainer: {marginVertical: 15},
+  message: {
+    fontSize: 14,
+    fontFamily: 'SofiaProMedium',
+    textAlign: 'left',
+    color: colors.GRAY,
+    marginVertical: 10,
+  },
+  verificationCodeContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    marginVertical: 20,
+  },
+  verificationInputContainer: {
+    width: 65,
+    height: 65,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: 1,
+    borderRadius: 10,
+    borderColor: colors.LIGHT_GRAY,
+  },
+  verificationInput: {
+    color: colors.PRIMARY,
+    fontSize: 25,
+    fontFamily: 'SofiaProBold',
+  },
 });
 
 export default styles;
