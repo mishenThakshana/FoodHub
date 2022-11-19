@@ -4,4 +4,6 @@ export default {
   SIGNUP: 'Signup',
   LOGIN: 'Login',
   VERIFICATION: 'Verification',
+  RESET_PASSWORD: 'Reset Password',
+  PHONE_REGISTRATION: 'Phone Registration',
 };

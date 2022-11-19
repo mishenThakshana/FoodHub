@@ -125,6 +125,15 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontFamily: 'SofiaProBold',
   },
+  phoneRegistrationInpContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: colors.PRIMARY,
+    paddingHorizontal: 10,
+    borderRadius: 10,
+    marginVertical: 10,
+  },
 });
 
 export default styles;

@@ -5,6 +5,8 @@ import {
   Signup,
   Login,
   Verification,
+  ResetPassword,
+  PhoneRegistration,
 } from 'src/screens/auth';
 import routes from 'src/constants/routes';
 
@@ -18,6 +20,11 @@ const AuthNavigator = () => {
       <Stack.Screen name={routes.SIGNUP} component={Signup} />
       <Stack.Screen name={routes.LOGIN} component={Login} />
       <Stack.Screen name={routes.VERIFICATION} component={Verification} />
+      <Stack.Screen name={routes.RESET_PASSWORD} component={ResetPassword} />
+      <Stack.Screen
+        name={routes.PHONE_REGISTRATION}
+        component={PhoneRegistration}
+      />
     </Stack.Navigator>
   );
 };

@@ -37,7 +37,7 @@ const Verification: FC<VerificationInterface> = ({navigation}) => {
             {/* Message */}
             <Message message="Please type the verification code sent to prelookstudio@gmail.com" />
             {/* Verification pallete */}
-            <VerificationCode />
+            <VerificationCode navigation={navigation} />
             {/* Already Text */}
             <AlreadyText
               text="I don't received a code!"

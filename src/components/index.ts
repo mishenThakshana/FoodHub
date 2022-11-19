@@ -8,3 +8,4 @@ export {default as AlreadyText} from './AlreadyText';
 export {default as SocialLogin} from './SocialLogin';
 export {default as Message} from './Message';
 export {default as VerificationCode} from './VerificationCode';
+export {default as ClassicInput} from './ClassicInput';

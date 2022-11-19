@@ -1,9 +1,14 @@
-import {useRef, useState} from 'react';
+import {FC, useRef, useState} from 'react';
 import {TextInput, View} from 'react-native';
 import styles from 'src/styles/Global.styles';
 import colors from 'src/constants/colors';
+import routes from 'src/constants/routes';
 
-const VerificationCode = () => {
+interface VerificationCodeInterface {
+  navigation: any;
+}
+
+const VerificationCode: FC<VerificationCodeInterface> = ({navigation}) => {
   // values
   const [code1, setCode1] = useState<any>(null);
   const [code2, setCode2] = useState<any>(null);
@@ -97,7 +102,7 @@ const VerificationCode = () => {
           onChange={val => {
             setCode4(val);
             if (code4 !== '') {
-              code4Ref.current.focus();
+              navigation.navigate(routes.RESET_PASSWORD);
             }
           }}
           onFocus={() => setCode4Focus(true)}
