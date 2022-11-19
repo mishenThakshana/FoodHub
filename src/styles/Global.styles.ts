@@ -30,6 +30,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     borderRadius: 28,
   },
+  iconBtnContainer: {
+    borderRadius: 10,
+    paddingHorizontal: 10,
+    paddingVertical: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   bodyContainer: {
     flex: 1,
     margin: 30,

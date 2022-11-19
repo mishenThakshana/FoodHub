@@ -1,3 +1,4 @@
 export {default as SplashScreen} from './SplashScreen';
-export {default as WELCOME} from './Welcome';
-export {default as SIGNUP} from './Signup';
+export {default as Welcome} from './Welcome';
+export {default as Signup} from './Signup';
+export {default as Login} from './Login';

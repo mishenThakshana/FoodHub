@@ -2,6 +2,7 @@ import {FC} from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import colors from 'src/constants/colors';
 import styles from 'src/styles/Global.styles';
+import Ionicon from 'react-native-vector-icons/Ionicons';
 
 interface BtnInterface {
   label?: string;
@@ -32,15 +33,20 @@ const Btn: FC<BtnInterface> = ({
           color ? {backgroundColor: color} : {backgroundColor: colors.PRIMARY},
           size === 'sm' ? styles.btnSmallContainer : styles.btnContainer,
           borderColor ? {borderWidth: 1, borderColor} : {},
+          icon ? styles.iconBtnContainer : {},
         ]}>
-        <Text
-          style={[
-            {fontFamily: 'SofiaProMedium'},
-            {color: labelColor},
-            labelSize ? {fontSize: labelSize} : {fontSize: 14},
-          ]}>
-          {label}
-        </Text>
+        {icon ? (
+          <Ionicon name={icon} size={20} color={labelColor} />
+        ) : (
+          <Text
+            style={[
+              {fontFamily: 'SofiaProMedium'},
+              {color: labelColor},
+              labelSize ? {fontSize: labelSize} : {fontSize: 14},
+            ]}>
+            {label}
+          </Text>
+        )}
       </View>
     </TouchableOpacity>
   );

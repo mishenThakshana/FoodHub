@@ -1,14 +1,15 @@
 import {FC} from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
 import colors from 'src/constants/colors';
 import styles from 'src/styles/Global.styles';
 
 interface AlreadyTextInterface {
-  text: string;
-  subText: string;
+  text?: string;
+  subText?: string;
   underline?: boolean;
   subTextColor: string;
   textColor: string;
+  handler?: () => void;
 }
 
 const AlreadyText: FC<AlreadyTextInterface> = ({
@@ -17,21 +18,24 @@ const AlreadyText: FC<AlreadyTextInterface> = ({
   underline,
   textColor,
   subTextColor,
+  handler,
 }) => {
   return (
-    <View style={{alignItems: 'center', marginVertical: 20}}>
-      <Text style={[styles.alreadyText, {color: textColor}]}>
-        {text}
-        {` `}
-        <Text
-          style={[
-            underline && {textDecorationLine: 'underline'},
-            {color: subTextColor},
-          ]}>
-          {subText}
+    <TouchableOpacity onPress={handler}>
+      <View style={{alignItems: 'center', marginVertical: 20}}>
+        <Text style={[styles.alreadyText, {color: textColor}]}>
+          {text}
+          {` `}
+          <Text
+            style={[
+              underline && {textDecorationLine: 'underline'},
+              {color: subTextColor},
+            ]}>
+            {subText}
+          </Text>
         </Text>
-      </Text>
-    </View>
+      </View>
+    </TouchableOpacity>
   );
 };
 
