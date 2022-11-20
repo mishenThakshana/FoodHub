@@ -1,17 +1,15 @@
 import {FC} from 'react';
-import {SafeAreaView, TextInput, View} from 'react-native';
+import {SafeAreaView, View} from 'react-native';
 import styles from 'src/styles/Global.styles';
 import routes from 'src/constants/routes';
 import {
   Btn,
-  ClassicInput,
   Message,
+  PhoneField,
   ScreenTitle,
   TopbarImage,
 } from 'src/components';
 import colors from 'src/constants/colors';
-import {SrilankaImg} from 'src/assets/images';
-import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
 
 interface PhoneRegistrationInterface {
   navigation: any;
@@ -40,28 +38,9 @@ const PhoneRegistration: FC<PhoneRegistrationInterface> = ({navigation}) => {
             message={`Enter your phone number to verify ${`\n`}your account`}
           />
           {/* Input */}
-          <View style={styles.phoneRegistrationInpContainer}>
-            <View style={{flexDirection: 'row', alignItems: 'center'}}>
-              <View>
-                <SrilankaImg width={50} height={50} />
-              </View>
-              <View>
-                <MaterialIcon
-                  name="arrow-drop-down"
-                  size={25}
-                  color={colors.GRAY}
-                />
-              </View>
-            </View>
-            <View>
-              <TextInput
-                cursorColor={colors.PRIMARY}
-                style={{color: colors.SECONDARY, fontSize: 18}}
-              />
-            </View>
-          </View>
+          <PhoneField />
           {/* Submit btn */}
-          <View style={styles.submitBtnContainer}>
+          <View style={[styles.submitBtnContainer, {zIndex: -5}]}>
             <Btn label="SEND" labelColor={colors.ACCENT} />
           </View>
         </View>

@@ -6,8 +6,8 @@ import {
   ImageBackground,
   useWindowDimensions,
 } from 'react-native';
-import {BackgroundImg, FacebookLogo, GoogleLogo} from 'src/assets/images';
-import {Btn, BtnIcon, LineText, AlreadyText, SocialLogin} from 'src/components';
+import {BackgroundImg} from 'src/assets/images';
+import {Btn, LineText, AlreadyText, SocialLogin} from 'src/components';
 import colors from 'src/constants/colors';
 import styles from 'src/styles/Global.styles';
 import LinearGradient from 'react-native-linear-gradient';
