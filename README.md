@@ -7,4 +7,4 @@ A conceptual app made for personal experience. Contains user-friendly interactio
 
 ![4](https://user-images.githubusercontent.com/102714819/202829977-9207e717-2a82-40a3-b173-e86a531400f3.png) ![5](https://user-images.githubusercontent.com/102714819/202862371-38ff6372-fef0-4c4b-bdd4-b48cde87bc4f.png) ![6](https://user-images.githubusercontent.com/102714819/202863066-4fea6bb7-1485-4e33-ba3c-5c67cc77bc50.png)
 
-![7](https://user-images.githubusercontent.com/102714819/202864116-954f9e79-8b17-4d95-b805-d0d130f355ee.png)
+![7](https://user-images.githubusercontent.com/102714819/202864116-954f9e79-8b17-4d95-b805-d0d130f355ee.png) ![8](https://user-images.githubusercontent.com/102714819/202950836-f50fb1c4-662b-4318-b790-00ba6614088a.png)
