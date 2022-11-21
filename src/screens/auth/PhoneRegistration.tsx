@@ -41,7 +41,11 @@ const PhoneRegistration: FC<PhoneRegistrationInterface> = ({navigation}) => {
           <PhoneField />
           {/* Submit btn */}
           <View style={[styles.submitBtnContainer, {zIndex: -5}]}>
-            <Btn label="SEND" labelColor={colors.ACCENT} />
+            <Btn
+              handler={() => navigation.navigate(routes.MAIN_NAVIGATOR)}
+              label="SEND"
+              labelColor={colors.ACCENT}
+            />
           </View>
         </View>
       </View>

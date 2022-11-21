@@ -9,6 +9,7 @@ import {
   PhoneRegistration,
 } from 'src/screens/auth';
 import routes from 'src/constants/routes';
+import MainNavigator from './MainNavigator';
 
 const Stack = createNativeStackNavigator();
 
@@ -25,6 +26,7 @@ const AuthNavigator = () => {
         name={routes.PHONE_REGISTRATION}
         component={PhoneRegistration}
       />
+      <Stack.Screen name={routes.MAIN_NAVIGATOR} component={MainNavigator} />
     </Stack.Navigator>
   );
 };
