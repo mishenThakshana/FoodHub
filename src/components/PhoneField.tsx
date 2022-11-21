@@ -78,11 +78,19 @@ const PhoneField = () => {
             <View>
               <TouchableOpacity
                 onPress={() => setOpenCountryPicker(!openCountryPicker)}>
-                <MaterialIcon
-                  name="arrow-drop-down"
-                  size={25}
-                  color={colors.GRAY}
-                />
+                {openCountryPicker ? (
+                  <MaterialIcon
+                    name="arrow-drop-up"
+                    size={25}
+                    color={colors.GRAY}
+                  />
+                ) : (
+                  <MaterialIcon
+                    name="arrow-drop-down"
+                    size={25}
+                    color={colors.GRAY}
+                  />
+                )}
               </TouchableOpacity>
             </View>
           </View>
@@ -90,7 +98,7 @@ const PhoneField = () => {
         <View>
           <TextInput
             cursorColor={colors.PRIMARY}
-            style={{color: colors.SECONDARY, fontSize: 18}}
+            style={{flex: 1, color: colors.SECONDARY, fontSize: 18}}
           />
         </View>
       </View>
@@ -99,6 +107,7 @@ const PhoneField = () => {
           {countries.length > 240 && (
             <FlatList
               data={filteredCountries}
+              initialNumToRender={10}
               renderItem={({item}) => {
                 return (
                   <TouchableOpacity

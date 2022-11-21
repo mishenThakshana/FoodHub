@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "release-android": "cd android && gradlew clean && gradlew --stop && gradlew assembleRelease"
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.13",
