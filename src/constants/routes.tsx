@@ -1,5 +1,4 @@
 export default {
-  SPLASH_SCREEN: 'SplashScreen',
   WELCOME: 'Welcome',
   SIGNUP: 'Signup',
   LOGIN: 'Login',
@@ -13,4 +12,7 @@ export default {
   CART: 'Cart',
   FAVOURITES: 'Favourites',
   NOTIFICATIONS: 'Notifications',
+  // Drawer navigation
+  MY_ORDERS: 'MyOrders',
+  MY_PROFILE: 'MyProfile',
 };
